@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export const SlideTest: React.FC = () => {
-  let [index, setIndex] = useState(0)
+  const [index, setIndex] = useState<number>(0)
   return (
     <div
       className={`relative flex h-screen w-screen justify-between overflow-hidden text-white transition-all duration-500 lg:flex-row lg:items-center xl:px-24
