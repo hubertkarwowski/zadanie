@@ -4,7 +4,7 @@ export const SlideTest: React.FC = () => {
   let [index, setIndex] = useState(0)
   return (
     <div
-      className={` relative flex h-screen w-screen  justify-between overflow-x-hidden text-white transition-all duration-500 lg:flex-row lg:items-center xl:px-24
+      className={`relative flex h-screen w-screen justify-between overflow-hidden text-white transition-all duration-500 lg:flex-row lg:items-center xl:px-24
         ${
           index === 0
             ? 'flex-col bg-green'
@@ -13,7 +13,13 @@ export const SlideTest: React.FC = () => {
             : 'flex-col bg-rose text-grey'
         }`}
     >
-      <div className="flex flex-col gap-4 p-8 md:gap-12 md:p-24 md:py-4 lg:w-2/4 ">
+      <div
+        className={`flex flex-col gap-4 p-8 md:gap-12 md:p-24 md:py-4 lg:w-2/4 ${
+          index === 1
+            ? 'animate-moveReverse lg:animate-none'
+            : 'animate-move lg:animate-none'
+        }`}
+      >
         <div className="">
           <img
             src={
@@ -26,7 +32,7 @@ export const SlideTest: React.FC = () => {
             className="w-xs"
           />
         </div>
-        <h2 className={`text-lg font-bold md:text-5xl`}>
+        <h2 className={`text-lg font-bold md:text-4xl`}>
           {index === 0
             ? 'Pobierz aplikację'
             : index === 1
@@ -49,7 +55,7 @@ export const SlideTest: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="absolute bottom-0 top-32 z-10 m-auto flex w-full place-content-between px-5 lg:px-4 xl:left-0 xl:px-24">
+      <div className="absolute bottom-0 top-32 z-10 m-auto flex w-full place-content-between px-5 lg:px-4 xl:left-0 xl:px-12">
         <img
           src="arrow.svg"
           className="w-xs3 cursor-pointer md:w-xs2"
@@ -73,11 +79,9 @@ export const SlideTest: React.FC = () => {
         <img
           src={index === 0 ? 'app.svg' : index === 1 ? 'talk.svg' : 'qr.svg'}
           className={`m-auto w-sm md:w-lg lg:absolute lg:mx-auto ${
-            index === 0
-              ? 'lg:top-80 lg:bottom-0 lg:left-0 lg:right-0 lg:w-xl2 '
-              : index === 1
-              ? 'lg:bottom-56 lg:top-0 lg:w-xl2'
-              : 'lg:top-80 lg:bottom-0 lg:left-0 lg:right-0 lg:w-xl2'
+            index === 1
+              ? 'animate-move lg:bottom-72 lg:top-0 lg:w-xl2 '
+              : 'animate-moveReverse lg:top-80 lg:bottom-0 lg:left-0 lg:right-0 lg:w-xl2 '
           }`}
         />
       </div>

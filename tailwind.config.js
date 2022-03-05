@@ -25,6 +25,20 @@ module.exports = {
         xs2: '1.4rem',
         xs3: '1rem',
       },
+      keyframes: {
+        move: {
+          '100%': { transform: 'translateY(0)' },
+          '0%': { transform: 'translateY(100%)' },
+        },
+        moveReverse: {
+          '100%': { transform: 'translateY(0)' },
+          '0%': { transform: 'translateY(-100%)' },
+        },
+      },
+      animation: {
+        move: 'move 0.5s ease',
+        moveReverse: 'moveReverse 0.5s ease',
+      },
     },
   },
   plugins: [],
