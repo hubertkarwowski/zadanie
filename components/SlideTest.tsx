@@ -29,7 +29,7 @@ export const SlideTest: React.FC = () => {
                 ? 'icon-phone.svg'
                 : 'icon-pill.svg'
             }
-            className="w-xs"
+            className={` ${index === 0 ? 'w-xs' : 'w-s'}`}
           />
         </div>
         <h2 className={`text-lg font-bold md:text-4xl`}>

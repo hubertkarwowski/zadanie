@@ -16,23 +16,24 @@ module.exports = {
         md: '4rem',
       },
       spacing: {
-        xl2: '800px',
-        xl: '650px',
-        lg: '550px',
-        sm: '340px',
+        xl2: '50rem',
+        xl: '40.625rem',
+        lg: '34.375rem',
+        sm: '21.25rem',
         5: '5%',
-        xs: '60px',
+        s: '5rem',
+        xs: '3.75rem',
         xs2: '1.4rem',
         xs3: '1rem',
       },
       keyframes: {
         move: {
-          '100%': { transform: 'translateY(0)' },
-          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+          '0%': { transform: 'translateY(100%)', opacity: '0.5' },
         },
         moveReverse: {
-          '100%': { transform: 'translateY(0)' },
-          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+          '0%': { transform: 'translateY(-100%)', opacity: '0.5' },
         },
       },
       animation: {
