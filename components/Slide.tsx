@@ -18,13 +18,7 @@ export const Slide: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="absolute bottom-0 top-32 m-auto flex w-full place-content-between px-5 lg:px-4 xl:left-0 xl:px-24">
-        <img src="arrow.svg" className="w-xs3 cursor-pointer md:w-xs2" />
-        <img
-          src="arrow.svg"
-          className="w-xs3 rotate-180 cursor-pointer bg-sm md:w-xs2"
-        />
-      </div>
+
       <div className="bg-green lg:relative lg:w-2/4">
         <img
           src="app.svg"

@@ -9,12 +9,14 @@ module.exports = {
         green: 'rgba(38, 194, 153, 1)',
         blue: 'rgba(10, 64, 161, 1)',
         rose: 'rgba(250, 191, 186, 1)',
+        grey: 'rgba(51, 51, 48, 1)',
       },
       backgroundSize: {
         sm: '2rem',
         md: '4rem',
       },
       spacing: {
+        xl2: '800px',
         xl: '650px',
         lg: '550px',
         sm: '340px',
